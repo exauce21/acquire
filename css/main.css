@@ -30,7 +30,7 @@
 
   /* Type */
   --font-display:
-    "Rubik", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
   --font-body:
     "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
   --fs-h1: clamp(2.5rem, 1.4rem + 4.4vw, 5.125rem);
@@ -355,7 +355,7 @@ button {
    Buttons & links
    ========================================================= */
 .btn {
-  --bg: var(--ink);
+  --bg: var(--teal);
   --fg: #fff;
   --ibg: #fff;
   --ifg: var(--ink);
@@ -862,7 +862,7 @@ body.menu-open {
 
 .hero-pill b {
   font-weight: 500;
-  background: var(--ink);
+  background: var(--teal);
   color: #fff;
   padding: 5px 10px;
   border-radius: var(--r-pill);
@@ -889,7 +889,16 @@ body.menu-open {
 /* Hero title — typewriter word (inform → challenge → inspire) */
 .t-red,
 .typer__text {
-  color: var(--red);
+  background: linear-gradient(45deg, var(--yellow), var(--red));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.t-yellow
+.typer__text {
+  color: var(--yellow);
 }
 
 .hero-title__anim {
@@ -899,6 +908,7 @@ body.menu-open {
 .hero-title__l1,
 .hero-title__l2 {
   display: block;
+  color: var(--ink);
 }
 
 .js .hero-title__anim {
@@ -1073,11 +1083,10 @@ body.menu-open {
 
 .typer__cursor {
   display: inline-block;
-  width: 0.075em;
+  width: 0.060em;
   height: 0.86em;
   margin: 0 0.03em 0 0.06em;
-  background: var(--red);
-  border-radius: 0.04em;
+  background: var(--yellow);
   vertical-align: -0.06em;
   animation: blink 1.05s steps(1, end) infinite;
 }
@@ -1088,7 +1097,7 @@ body.menu-open {
 }
 
 .typer__dot {
-  color: var(--ink);
+  color: var(--yellow);
 }
 
 @keyframes blink {
@@ -1103,7 +1112,7 @@ body.menu-open {
 }
 
 .hero__intro {
-  max-width: 700px;
+  max-width: 850px;
   margin: 28px auto 0;
 }
 
@@ -1125,14 +1134,14 @@ body.menu-open {
 .in-tag {
   display: inline;
   padding: 0.12em 0.5em;
-  border-radius: 8px;
+  border-radius: 6px;
   white-space: nowrap;
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
 }
 
 .in-tag--y {
-  background: var(--yellow-soft);
+  background: var(--yellow);
 }
 
 .in-tag--w {
@@ -1140,7 +1149,7 @@ body.menu-open {
 }
 
 .in-tag--d {
-  background: var(--ink);
+  background: var(--ink-2);
   color: #fff;
 }
 
@@ -1174,6 +1183,9 @@ body.menu-open {
   min-height: 280px;
   aspect-ratio: 16/10;
   background: linear-gradient(160deg, #e2dfd7, #d6d2c8);
+  background-image: url("../assets/img/hero-acquire-storyteller.jpg") ;
+  background-size: cover;
+  background-position: center;
 }
 
 @media (min-width: 900px) {
