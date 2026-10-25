@@ -226,6 +226,11 @@ button {
   color: #fff;
 }
 
+.teal {
+  background: linear-gradient(150deg, var(--teal), var(--ink));
+  color: #fff;
+}
+
 .dark h2,
 .dark h3,
 .dark h4 {
@@ -1207,7 +1212,7 @@ body.menu-open {
 .stat-card__top small {
   display: block;
   font-family: var(--font-display);
-  color: var(--muted-dark);
+  color: var(--white);
   font-size: 0.9375rem;
 }
 
@@ -1227,7 +1232,7 @@ body.menu-open {
 }
 
 .stat-card p {
-  color: var(--muted-dark);
+  color: var(--white);
   font-size: 0.9375rem;
   margin: 0;
 }
