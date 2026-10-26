@@ -1842,7 +1842,7 @@ body.menu-open {
 }
 
 .course__inner {
-  background: var(--ink);
+  background: var(--teal);
   color: #fff;
   border-radius: var(--r-xl);
   padding: 8px;
@@ -1866,10 +1866,6 @@ body.menu-open {
   border-radius: var(--r-lg);
 }
 
-.course__media .video-cap {
-  padding: 0 10px 6px;
-}
-
 .course__panel {
   padding: 22px 18px 18px;
   display: flex;
@@ -1890,7 +1886,7 @@ body.menu-open {
 }
 
 .course__panel .desc {
-  color: var(--muted-dark);
+  color: var(--white);
   font-size: 0.9375rem;
 }
 
@@ -2084,7 +2080,7 @@ body.menu-open {
   width: 38px;
   height: 38px;
   border-radius: 50%;
-  background: var(--ink);
+  background: var(--yellow);
   display: grid;
   place-items: center;
 }
@@ -2092,7 +2088,7 @@ body.menu-open {
 .yt__play svg {
   width: 14px;
   height: 14px;
-  fill: #fff;
+  fill: var(--ink);
   margin-left: 2px;
 }
 
