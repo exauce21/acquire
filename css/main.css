@@ -496,6 +496,16 @@ button {
   transition: text-decoration-thickness 0.2s;
 }
 
+.white-link {
+  font-family: var(--font-display);
+  font-weight: 500;
+  color: var(--white);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+  transition: text-decoration-thickness 0.2s;
+}
+
 .link:hover {
   text-decoration-thickness: 2px;
 }
@@ -1432,7 +1442,7 @@ body.menu-open {
 }
 
 .about__grid p {
-  color: var(--muted-dark);
+  color: var(--white);
   font-size: var(--fs-lead);
 }
 
