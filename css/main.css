@@ -1458,7 +1458,7 @@ body.menu-open {
   gap: 4px 14px;
   margin-top: 12px;
   font-size: var(--fs-small);
-  color: var(--muted);
+  color: var(--white);
 }
 
 .dark .video-cap {
