@@ -1403,11 +1403,10 @@ body.menu-open {
 
 .statement {
   font-family: var(--font-display);
-  font-weight: 500;
-  font-size: var(--fs-statement);
+  font-weight: 400;
+  font-size: 35px;
   line-height: 1.28;
   letter-spacing: -0.015em;
-  max-width: 1040px;
   margin: 28px 0 0;
   color: #fff;
 }
@@ -1423,6 +1422,7 @@ body.menu-open {
 
 .statement .hl-y {
   color: var(--yellow);
+  font-weight: 600;
 }
 
 .about__grid {
