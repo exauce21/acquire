@@ -1210,7 +1210,7 @@ body.menu-open {
 @media (min-width: 900px) {
   .hero__photo {
     aspect-ratio: auto;
-    min-height: 600px;
+    min-height: 700px;
   }
 }
 
