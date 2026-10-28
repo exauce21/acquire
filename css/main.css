@@ -3042,6 +3042,13 @@ body.menu-open {
   margin-bottom: 16px;
 }
 
+.footer__logo {
+  display: block;
+  width: auto;
+  height: 80px;
+  margin-bottom: 20px;
+}
+
 .footer__tagline {
   font-family: var(--font-display);
   font-weight: 500;
