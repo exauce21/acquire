@@ -1248,8 +1248,12 @@ body.menu-open {
 
 .stat-card p {
   color: var(--white);
-  font-size: 0.9375rem;
+  font-size: 20px;
   margin: 0;
+}
+
+.stat-card__label {
+  margin-bottom: 16px;
 }
 
 .stat-card hr {
