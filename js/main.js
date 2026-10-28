@@ -384,6 +384,9 @@
   setStacking();
   if (stackMQ.addEventListener) stackMQ.addEventListener("change", setStacking);
 
+  /* ---------- Hero photo: widens on scroll ---------- */
+  var heroPhoto = RM ? null : $(".hero__photo");
+
   /* ---------- Scroll loop (rAF-throttled) ---------- */
   var ticking = false;
   function onFrame() {
@@ -395,6 +398,13 @@
     if (top !== fabState.top) {
       fabState.top = top;
       updateFab();
+    }
+    if (heroPhoto) {
+      var hp = clamp(y / (vh * 0.6), 0, 1);
+      heroPhoto.style.setProperty("--hz", (1 - hp).toFixed(4));
+      var hr = heroPhoto.getBoundingClientRect();
+      var hs = clamp(1 - hr.bottom / (vh + hr.height), 0, 1);
+      heroPhoto.style.setProperty("--hs", hs.toFixed(4));
     }
     if (wordEls.length) {
       var r = statement.getBoundingClientRect();

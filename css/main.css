@@ -1193,7 +1193,6 @@ body.menu-open {
 
 @media (min-width: 900px) {
   .hero__media {
-    
     margin-top: 56px;
   }
 }
@@ -1211,7 +1210,7 @@ body.menu-open {
 @media (min-width: 900px) {
   .hero__photo {
     aspect-ratio: auto;
-    min-height: 520px;
+    min-height: 600px;
   }
 }
 
@@ -3229,6 +3228,23 @@ body.menu-open {
   transform: translateY(40px) scale(0.97);
 }
 
+/* Hero photo: 80% wide, widens to full width on scroll (--hz set in JS) */
+.js .hero__photo {
+  clip-path: inset(
+    calc(var(--hz, 1) * 6%) calc(var(--hz, 1) * 10%) round var(--r-lg)
+  );
+  will-change: clip-path;
+}
+
+.js .hero__photo::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: inherit;
+  transform: scale(calc(1 + var(--hs, 0) * 0.15));
+  will-change: transform;
+}
+
 .is-loaded .hero__media {
   opacity: 1;
   transform: none;
@@ -3279,6 +3295,14 @@ body.menu-open {
     opacity: 1 !important;
     transform: none !important;
     filter: none !important;
+  }
+
+  .js .hero__photo {
+    clip-path: none;
+  }
+
+  .js .hero__photo::before {
+    transform: none;
   }
 
   .js .statement .w {
