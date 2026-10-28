@@ -2132,8 +2132,8 @@ body.menu-open {
 }
 
 .pcard .chips .chip:first-child {
-  background: var(--ink);
-  color: #fff;
+  background: var(--yellow);
+  color: var(--ink);
 }
 
 .pcard h3 {
@@ -2395,6 +2395,18 @@ body.menu-open {
   }
 }
 
+.climate .pillphoto {
+  grid-column: 1 / -1;
+  width: 100%;
+  border-radius: var(--r-lg);
+}
+
+.climate .pillphoto img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .climate h3 {
   font-size: clamp(1.75rem, 1.3rem + 1.4vw, 2.625rem);
   line-height: 1.1;
@@ -2407,8 +2419,8 @@ body.menu-open {
 }
 
 .climate .chip:first-child {
-  background: var(--ink);
-  color: #fff;
+  background: var(--yellow);
+  color: var(--ink);
 }
 
 .climate p {
