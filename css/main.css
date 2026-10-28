@@ -1193,7 +1193,7 @@ body.menu-open {
 
 @media (min-width: 900px) {
   .hero__media {
-    grid-template-columns: 2.35fr 1fr;
+    
     margin-top: 56px;
   }
 }
@@ -1387,7 +1387,7 @@ body.menu-open {
    About (dark block)
    ========================================================= */
 .about {
-  padding-top: var(--section-y);
+  padding-top: 40px;
 }
 
 .about__block {
@@ -1636,11 +1636,10 @@ body.menu-open {
 .tile {
   border-radius: var(--r-lg);
   padding: 24px;
-  min-height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 24px;
+  gap: 16px;
   position: relative;
   overflow: hidden;
 }
@@ -1648,7 +1647,6 @@ body.menu-open {
 @media (min-width: 768px) {
   .tile {
     padding: 28px;
-    min-height: 330px;
   }
 }
 
@@ -1701,6 +1699,7 @@ body.menu-open {
   text-align: center;
   align-items: center;
   justify-content: center;
+  padding-top: 64px;
 }
 
 .tile--center .chip {
