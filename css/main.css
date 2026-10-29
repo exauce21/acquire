@@ -1905,9 +1905,23 @@ body.menu-open {
 
 @media (min-width: 768px) {
   .report {
-    grid-template-columns: 1fr auto;
+    grid-template-columns: auto 1fr auto;
     gap: 40px;
     padding: 36px;
+  }
+}
+
+.report__cover {
+  display: block;
+  width: 140px;
+  height: auto;
+  border-radius: var(--r-md);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+}
+
+@media (min-width: 768px) {
+  .report__cover {
+    width: 160px;
   }
 }
 
