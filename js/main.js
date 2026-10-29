@@ -339,7 +339,7 @@
   }
 
   /* ---------- 8. Statement: words light up with scroll ---------- */
-  var statement = $("[data-words]"),
+  var statement = $(".statement[data-words]"),
     wordEls = [];
   if (statement && !RM) {
     var wrapWords = function (node) {
