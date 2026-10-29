@@ -2923,6 +2923,55 @@ body.menu-open {
   }
 }
 
+.cov--wide {
+  margin-top: 10px;
+  padding: 10px;
+  background: var(--surface);
+  display: grid;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .cov--wide {
+    grid-template-columns: minmax(0, 0.9fr) 1.1fr;
+    gap: 36px;
+    align-items: center;
+    padding-right: 36px;
+  }
+}
+
+.cov--wide .cov__img {
+  aspect-ratio: 909/823;
+  border-radius: calc(var(--r-xl) - 10px);
+}
+
+.cov--wide .cov__body {
+  padding: 0 14px 18px;
+}
+
+@media (min-width: 768px) {
+  .cov--wide .cov__body {
+    padding: 0;
+  }
+}
+
+.cov--wide h3 {
+  font-size: clamp(1.375rem, 1.1rem + 1vw, 2rem);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  margin: 16px 0 12px;
+}
+
+.cov--wide p {
+  color: var(--muted);
+  max-width: 52ch;
+}
+
+.cov--wide .cov__cta {
+  display: inline-block;
+  margin-top: 18px;
+}
+
 .cov-list {
   display: grid;
   gap: 10px;
